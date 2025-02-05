@@ -1,13 +1,33 @@
-import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import About from './pages/about/About';
+import Cart from './pages/cart/Cart';
+import Contact from './pages/contact/Contact';
+import Home from './pages/home/Home';
+import LogIn from './pages/login/LogIn';
+import Navbar from './components/navbar/Navbar';
+import './App.css';
+import './layout.css';
+
+import './responsive.css';
+
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-      </Routes>
-    </BrowserRouter>
+    <div className="layout">
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="content">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/cart" element={<Cart/>} />
+            <Route path="/login" element={<LogIn/>} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }

@@ -1,0 +1,42 @@
+@media (max-width: 1366px) {
+    .layout {
+        max-width: 1280px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        max-width: 768px;
+        
+        nav {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 738px) {
+    .layout {
+        max-width: 640px;
+
+        nav {
+            a {
+                display: none;
+            }
+    
+            span {
+                display: initial;
+            }
+
+            .menuIcon {
+                display: inline;
+            }
+
+            .menu a {
+                display: inline;
+            }
+        }
+    }
+}

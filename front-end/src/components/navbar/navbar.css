@@ -1,0 +1,96 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    a {
+        transition: all 0.4s ease;
+
+        &:hover {
+            scale: 1.05;
+        }
+    }
+
+    .left {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 28px;
+            }
+        }
+    }
+
+    .right {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        gap: 20px;
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+
+        .user {
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 8px;
+            background-color: rgb(255, 171, 44);
+
+            img {
+                width: 28px;
+                height: 28px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .menuIcon {
+        display: none;
+        z-index: 999;
+        background-color: black;
+        border-radius: 50%;
+        padding: 8px;
+
+        img {
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 50%;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        gap: 20px;
+
+        &.open {
+            right: 0;
+        }
+    }
+}

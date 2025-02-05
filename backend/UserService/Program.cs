@@ -12,12 +12,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Administrator"));
-    options.AddPolicy("RequireManagerRole", policy => policy.RequireRole("Manager"));
-    options.AddPolicy("RequireBaristaRole", policy => policy.RequireRole("Barista"));
-});
+builder.Services.AddAuthorizationBuilder()
+    .AddPolicy("RequireAdminRole", policy => policy.RequireRole("Administrator"))
+    .AddPolicy("RequireManagerRole", policy => policy.RequireRole("Manager"))
+    .AddPolicy("RequireBaristaRole", policy => policy.RequireRole("Barista"));
 
 var app = builder.Build();
 
