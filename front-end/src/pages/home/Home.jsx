@@ -5,6 +5,8 @@ import './Home.css';
 export default function Home() {
     const [products, setProducts] = useState([]);
 
+    // Temporal test data
+    // TODO: Replace with actual data from the database
     useEffect(() => {
         const mockProducts = [
             { id: 1, name: 'Espresso', price: 3.5, image: 'espresso.jpg' },
