@@ -47,11 +47,9 @@ export default function Home() {
         <div className="home-container">
             <div className="search-bar">
                 <input type="text" placeholder="Search for a product" />
-                <button>Search</button>
+                <button className="cs-button">Search</button>
             </div>
             <ProductCard products={products}/>
-
-
         </div>
     );
 }

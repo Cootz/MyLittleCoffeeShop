@@ -11,3 +11,17 @@ a {
 body {
   font-family: 'Lato', sans-serif;
 }
+
+.cs-button{
+  background-color: rgb(255, 171, 44);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(255, 190, 92);
+  }
+
+  &:active {
+    background-color: rgb(224, 135, 0);
+  }
+}
