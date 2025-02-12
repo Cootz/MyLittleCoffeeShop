@@ -2,7 +2,7 @@ import './About.css';
 
 function About() {
     return (
-        <div>
+        <div className="about-container">
             <div className="about-paragraph">
                 <h2>About Us</h2>
                 <p>Welcome to <b>My Little Coffee Shop</b>, your cozy haven for all things coffee and delicious snacks. We're passionate about crafting the perfect cup of hot coffee, carefully paired with a selection of tasty treats to complement every sip.</p>
@@ -35,6 +35,5 @@ function About() {
         </div>
     );
 }
-
 
 export default About;

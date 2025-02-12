@@ -1,4 +1,21 @@
 .contact-container {
     padding: 1rem;
-    text-align: center;
+
+    .paragraph
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 5px;
+    }
+    
+    img {
+        width: 64px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.05;
+        }
+    }
 } 
