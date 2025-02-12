@@ -1,0 +1,21 @@
+.checkout-cart-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+    border: none;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 0.5rem;
+    }
+}

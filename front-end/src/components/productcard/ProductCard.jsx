@@ -1,5 +1,6 @@
-import CartItem from "../cartitem/CartItem";
+import ProductCartItem from "../productcartitem/ProductCartItem";
 import './ProductCard.css';
+
 
 export default function ProductCard({products}) {
     return (
@@ -8,8 +9,9 @@ export default function ProductCard({products}) {
                 <p>No products found</p>
             ) : (
                 products.map((product) => (
-                    <CartItem key={product.id} name={product.name} price={product.price} image={product.image} />
+                    <ProductCartItem key={product.id} name={product.name} price={product.price} image={product.image} />
                 ))
+
             )}
         </div>
     );

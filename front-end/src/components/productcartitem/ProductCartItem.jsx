@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './CartItem.css';
+import './ProductCartItem.css';
 
 export default function CartItem({name, price, image}) {
     const counterLimit = 99; 
@@ -21,7 +21,7 @@ export default function CartItem({name, price, image}) {
                 <button
                     onClick={() => (counter > 0) && setCounter(prev => prev - 1)}
                 >
-                    <img src="/minus_.png"/>
+                    <img src="/minus_.png" alt="minus" />
                 </button>
                 <div className="counter">
                     <p>{counter}</p>
@@ -29,7 +29,7 @@ export default function CartItem({name, price, image}) {
                 <button
                     onClick={() => (counter < counterLimit) && setCounter(prev => prev + 1)}
                 >
-                    <img src="/plus_.png"/>
+                    <img src="/plus_.png" alt="plus" />
                 </button>
             </div>
         </div>
