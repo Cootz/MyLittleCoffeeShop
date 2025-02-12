@@ -1,0 +1,22 @@
+ul
+{
+    padding-left: 20px;
+}
+
+li
+{
+    padding-bottom: 10px;
+}
+
+.list-bold
+{
+    text-decoration: underline;
+}
+
+.about-paragraph
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 15px;
+}
