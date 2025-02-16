@@ -3,7 +3,7 @@ using ProductService.Models;
 
 namespace ProductService.Implementations.Db
 {
-    public class ProductDbContext : DbContext
+    public class ProductDbContext(DbContextOptions<ProductDbContext> contextOptions) : DbContext(contextOptions)
     {
         public DbSet<Product> Products { get; init; }
     }
