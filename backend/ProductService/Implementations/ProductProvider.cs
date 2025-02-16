@@ -2,7 +2,7 @@
 
 namespace ProductService.Implementations
 {
-    public class ProductManager
+    public class ProductProvider
     {
         public static ActionResult GetProducts()
         {

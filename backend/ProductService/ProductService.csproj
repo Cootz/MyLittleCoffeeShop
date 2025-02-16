@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Implementations\Db\" />
+    <Folder Include="Implementations\Db\Migrations\" />
   </ItemGroup>
 
 </Project>

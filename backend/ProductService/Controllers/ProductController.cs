@@ -10,7 +10,7 @@ namespace ProductService.Controllers
         [HttpGet]
         public ActionResult GetProducts()
         {
-            return Ok(ProductManager.GetProducts());
+            return Ok(ProductProvider.GetProducts());
         }
     }
 }
